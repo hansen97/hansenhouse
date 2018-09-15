@@ -1,0 +1,12 @@
+body {
+    margin: 0 auto;
+}
+
+
+#hero-logo {
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+}

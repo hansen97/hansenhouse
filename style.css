@@ -1,24 +1,56 @@
+/*
+Brand Colors
+*/
+
+:root {
+  --spot-color: #ea9f71;
+}
+
+/*
+Layout Styles:
+*/
+
 body {
   margin: 0 auto;
 }
 
-#hero-logo {
-  max-width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
+header {
+  width: 1000px;
+  background-color: blue;
+  height: 1000px;
+}
+
+article {
+  max-width: 500px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin: 0 auto;
+}
+
+/*
+Character Styles:
+*/
+
+h1 {
+  font-family: carbon, sans-serif;
+  font-size: 35px;
+  color: var(--spot-color);
+}
+
+h3 {
+  font-family: carbon, sans-serif;
+  font-size: 18px;
+  color: #e5e5e5;
 }
 
 p {
-  font-family: Georgia;
-  font-size: 24px;
+  font-family: garamond-premier-pro, serif;
+  font-style: normal;
   font-weight: 400;
-  line-height: 39px;
+  font-size: 18px;
+  line-height: 26px;
   color: #283c46;
-  width: 650px;
 
   display: flex;
   justify-content: center;
-  padding: 50px;
 }

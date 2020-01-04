@@ -3,12 +3,26 @@ Brand Colors
 */
 
 :root {
-  --spot-color: #ea9f71;
+  --spot-color: #2e2e2e;
+}
+
+/*
+SVG Styles
+*/
+
+#hh-logo-sm {
+  width: 100px;
+  margin: auto;
+  display: block;
 }
 
 /*
 Layout Styles:
 */
+
+#links {
+  text-align: center;
+}
 
 body {
   margin: 0 auto;
@@ -27,6 +41,13 @@ article {
   margin: 0 auto;
 }
 
+footer {
+  margin: 0 auto;
+  font-family: carbon, sans-serif;
+  font-size: 15px;
+  color: var(--spot-color);
+}
+
 /*
 Character Styles:
 */
@@ -35,6 +56,7 @@ h1 {
   font-family: carbon, sans-serif;
   font-size: 35px;
   color: var(--spot-color);
+  text-align: center;
 }
 
 h3 {
@@ -44,13 +66,25 @@ h3 {
 }
 
 p {
-  font-family: garamond-premier-pro, serif;
-  font-style: normal;
+  /* font-family: garamond-premier-pro, serif; */
+  font-family: source-sans-pro, sans-serif;
   font-weight: 400;
+  font-style: normal;
   font-size: 18px;
   line-height: 26px;
   color: #283c46;
 
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.firstcharacter {
+  color: rgb(54, 54, 54);
+  float: left;
+  font-family: garamond-premier-pro;
+  font-size: 90px;
+  line-height: 60px;
+  padding-top: 15px;
+  padding-right: 8px;
+  padding-left: 3px;
 }

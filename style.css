@@ -3,7 +3,9 @@ Brand Colors
 */
 
 :root {
-  --spot-color: #2e2e2e;
+  --spot-black: #0f0f0f;
+  /* --spot-black: #888888; */
+  --spot-gold: #a98e49;
 }
 
 /*
@@ -20,19 +22,52 @@ SVG Styles
 Layout Styles:
 */
 
-#links {
+/* #link {
   text-align: center;
+  text-decoration: none;
+} */
+
+a {
+  text-decoration: none;
 }
 
 body {
   margin: 0 auto;
+  background-color: var(--spot-black);
 }
 
-header {
-  width: 1000px;
-  background-color: blue;
-  height: 1000px;
+div.header {
+  background-color: #a98e4910;
+  opacity: 1;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
 }
+
+div.nav-links {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  padding: 10px;
+}
+
+div.header-logo-constraint {
+  margin-left: 20px;
+}
+
+/* #header-logo {
+  opacity: 100%;
+  width: 44.8px;
+  height: 53.37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 article {
   max-width: 500px;
@@ -42,10 +77,13 @@ article {
 }
 
 footer {
-  margin: 0 auto;
+  margin: 50px auto;
+  opacity: 0.2;
+  display: flex;
+  justify-content: center;
   font-family: carbon, sans-serif;
   font-size: 15px;
-  color: var(--spot-color);
+  color: var(--spot-gold);
 }
 
 /*
@@ -55,36 +93,37 @@ Character Styles:
 h1 {
   font-family: carbon, sans-serif;
   font-size: 35px;
-  color: var(--spot-color);
-  text-align: center;
+  color: var(--spot-gold);
+  text-align: left;
+  padding-top: 75px;
+}
+
+h2 {
+  font-family: expo-serif-pro, serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 h3 {
   font-family: carbon, sans-serif;
   font-size: 18px;
-  color: #e5e5e5;
+  color: var(--spot-gold);
 }
 
-p {
+p,
+div.nav-links {
   /* font-family: garamond-premier-pro, serif; */
-  font-family: source-sans-pro, sans-serif;
+  font-family: input-mono, monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
-  line-height: 26px;
-  color: #283c46;
+  font-size: 11px;
+  line-height: 20px;
+  color: var(--spot-gold);
+
+  p {
+    min-width: 300px;
+  }
 
   /* display: flex;
   justify-content: center; */
-}
-
-.firstcharacter {
-  color: rgb(54, 54, 54);
-  float: left;
-  font-family: garamond-premier-pro;
-  font-size: 90px;
-  line-height: 60px;
-  padding-top: 15px;
-  padding-right: 8px;
-  padding-left: 3px;
 }
